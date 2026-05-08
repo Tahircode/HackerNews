@@ -1,6 +1,6 @@
-import scrapeStories from "../services/scraper";
+import scrapeStories from "../services/scraper.js";
 
-const triggerScrape = async (req, res) => {
+export const triggerScrape = async (req, res) => {
   try {
     const stories = await scrapeStories();
     res.status(200).json({
@@ -17,6 +17,5 @@ const triggerScrape = async (req, res) => {
   }
 };
 
-export default triggerScrape;
 
 

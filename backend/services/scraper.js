@@ -1,12 +1,12 @@
 
 import axios from "axios";
-import { cheerio } from "cheerio";
-import Story from "../models/Story";
+import * as cheerio from "cheerio";
+import Story from "../models/Story.js";
 
 const HN_URL = process.env.HN_URL;
 
 const scrapeStories = async () => {
-  const { data } = await axios.get(HN_URL);
+  const { data } = await axios.get(process.env.HN_URL);
   const $ = cheerio.load(data);
 
   const stories = [];
@@ -36,7 +36,7 @@ const scrapeStories = async () => {
       Story.findOneAndUpdate(
         { hnId: story.hnId },
         { ...story, scrapedAt: new Date() },
-        { upsert: true, new: true }
+        { upsert: true, returnDocument: "after" }
       )
     )
   );
@@ -46,3 +46,6 @@ const scrapeStories = async () => {
 };
 
 export default scrapeStories;
+
+
+

@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+import mongoose from "mongoose";
 
 const storySchema = new mongoose.Schema(
   {
@@ -43,4 +43,4 @@ const storySchema = new mongoose.Schema(
 
 storySchema.index({ points: -1 }); 
 
-module.exports = mongoose.model("Story", storySchema);
+export default mongoose.model("Story", storySchema);
