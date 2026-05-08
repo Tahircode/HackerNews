@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@400;600&family=DM+Sans:wght@400;500&display=swap');
+
+.register {
+  min-height: calc(100vh - 52px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f6f6ef;
+  font-family: 'DM Sans', sans-serif;
+  padding: 2rem;
+}
+
+.register__card {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 2.5rem;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.07);
+}
+
+.register__header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.register__brand-y {
+  display: inline-block;
+  background: #ff6600;
+  color: #000;
+  font-family: 'Bitter', serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding: 4px 10px;
+  border-radius: 3px;
+  margin-bottom: 1rem;
+}
+
+.register__title {
+  font-family: 'Bitter', serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0.5rem 0 0.25rem;
+}
+
+.register__subtitle {
+  font-size: 0.9rem;
+  color: #888;
+  margin: 0;
+}
+
+.register__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.register__error {
+  background: #fff3f0;
+  border: 1px solid #ffccc7;
+  color: #c0392b;
+  font-size: 0.85rem;
+  padding: 0.6rem 0.9rem;
+  border-radius: 4px;
+  margin: 0;
+}
+
+.register__field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.register__label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #444;
+}
+
+.register__input {
+  padding: 0.65rem 0.9rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.95rem;
+  color: #1a1a1a;
+  outline: none;
+  transition: border-color 0.15s ease;
+  background: #fafafa;
+}
+
+.register__input:focus {
+  border-color: #ff6600;
+  background: #fff;
+}
+
+.register__btn {
+  margin-top: 0.4rem;
+  padding: 0.75rem;
+  background: #ff6600;
+  color: #000;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.register__btn:hover:not(:disabled) {
+  background: #e55a00;
+}
+
+.register__btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.register__footer {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 0.88rem;
+  color: #888;
+}
+
+.register__link {
+  color: #ff6600;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.register__link:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@400;600&family=DM+Sans:wght@400;500&display=swap');
+
+.home {
+  min-height: calc(100vh - 52px);
+  background: #f6f6ef;
+  font-family: 'DM Sans', sans-serif;
+  padding: 2rem 1rem;
+}
+
+.home__container {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.home__header {
+  margin-bottom: 1.5rem;
+}
+
+.home__title {
+  font-family: 'Bitter', serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0 0 0.25rem;
+}
+
+.home__subtitle {
+  font-size: 0.85rem;
+  color: #999;
+  margin: 0;
+}
+
+.home__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.home__state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 3rem 0;
+}
+
+.home__loading {
+  color: #888;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.home__error {
+  color: #c0392b;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.home__retry {
+  padding: 0.5rem 1.2rem;
+  background: #ff6600;
+  color: #000;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.home__retry:hover {
+  background: #e55a00;
+}
+
+.home__pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-top: 2rem;
+}
+
+.home__page-btn {
+  padding: 0.45rem 1.1rem;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.home__page-btn:hover:not(:disabled) {
+  border-color: #ff6600;
+  color: #ff6600;
+}
+
+.home__page-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.home__page-info {
+  font-size: 0.88rem;
+  color: #888;
+}

@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@400;600&family=DM+Sans:wght@400;500&display=swap');
+
+.story-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 6px;
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.story-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
+  transform: translateY(-1px);
+}
+
+.story-card__rank-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 40px;
+  padding-right: 0.75rem;
+  border-right: 1px solid #f0f0f0;
+}
+
+.story-card__points {
+  font-family: 'Bitter', serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ff6600;
+  line-height: 1;
+}
+
+.story-card__points-label {
+  font-size: 0.7rem;
+  color: #aaa;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.story-card__body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  min-width: 0;
+}
+
+.story-card__title {
+  font-size: 0.97rem;
+  font-weight: 500;
+  color: #1a1a1a;
+  text-decoration: none;
+  line-height: 1.4;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: color 0.15s ease;
+}
+
+.story-card__title:hover {
+  color: #ff6600;
+}
+
+.story-card__meta {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.story-card__meta strong {
+  color: #555;
+  font-weight: 500;
+}
+
+.story-card__dot {
+  color: #ccc;
+}
+
+.story-card__bookmark {
+  background: none;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  color: #ccc;
+  padding: 0.25rem;
+  line-height: 1;
+  transition: color 0.15s ease, transform 0.15s ease;
+  flex-shrink: 0;
+}
+
+.story-card__bookmark:hover {
+  color: #ff6600;
+  transform: scale(1.15);
+}
+
+.story-card__bookmark--active {
+  color: #ff6600;
+}

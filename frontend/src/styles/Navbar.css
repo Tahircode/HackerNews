@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@400;600&family=DM+Sans:wght@400;500&display=swap');
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  height: 52px;
+  background-color: #ff6600;
+  font-family: 'DM Sans', sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.navbar__brand {
+  font-family: 'Bitter', serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #000;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  letter-spacing: -0.02em;
+}
+
+.navbar__brand-y {
+  background: #000;
+  color: #ff6600;
+  font-weight: 600;
+  padding: 2px 7px;
+  font-size: 1rem;
+  border-radius: 2px;
+}
+
+.navbar__links {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.navbar__user {
+  font-size: 0.85rem;
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 500;
+}
+
+.navbar__link {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #000;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: opacity 0.15s ease;
+}
+
+.navbar__link:hover {
+  opacity: 1;
+}
+
+.navbar__btn {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 0.35rem 0.9rem;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.15s ease;
+  text-decoration: none;
+}
+
+.navbar__btn--logout {
+  background: rgba(0, 0, 0, 0.12);
+  color: #000;
+}
+
+.navbar__btn--logout:hover {
+  background: rgba(0, 0, 0, 0.22);
+}
+
+.navbar__btn--register {
+  background: #000;
+  color: #ff6600;
+}
+
+.navbar__btn--register:hover {
+  background: #222;
+}

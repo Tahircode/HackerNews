@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@400;600&family=DM+Sans:wght@400;500&display=swap');
+
+.bookmarks {
+  min-height: calc(100vh - 52px);
+  background: #f6f6ef;
+  font-family: 'DM Sans', sans-serif;
+  padding: 2rem 1rem;
+}
+
+.bookmarks__container {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.bookmarks__header {
+  margin-bottom: 1.5rem;
+}
+
+.bookmarks__title {
+  font-family: 'Bitter', serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0 0 0.25rem;
+}
+
+.bookmarks__subtitle {
+  font-size: 0.85rem;
+  color: #999;
+  margin: 0;
+  min-height: 1.2em;
+}
+
+.bookmarks__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.bookmarks__state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.bookmarks__loading {
+  color: #888;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.bookmarks__error {
+  color: #c0392b;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.bookmarks__empty {
+  font-size: 1rem;
+  color: #555;
+  margin: 0;
+  font-weight: 500;
+}
+
+.bookmarks__empty-hint {
+  font-size: 0.88rem;
+  color: #999;
+  margin: 0;
+}
+
+.bookmarks__link {
+  color: #ff6600;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.bookmarks__link:hover {
+  text-decoration: underline;
+}
+
+.bookmarks__retry {
+  padding: 0.5rem 1.2rem;
+  background: #ff6600;
+  color: #000;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.bookmarks__retry:hover {
+  background: #e55a00;
+}
